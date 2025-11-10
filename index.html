@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Minhaz Ahmad — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="nav-wrap">
+    <nav class="container nav">
+      <a href="#home" class="brand">Md. Minhaz Ahmad</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle">🌙</button>
+        <a class="btn" href="./Resume.pdf" download>Download Resume</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1 id="typed">Hi, I'm Md. Minhaz Ahmad</h1>
+        <p class="lead">Web Developer • Full Stack Enthusiast • Core Java & SQL</p>
+
+        <div class="hero-ctas">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/minhaz930" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/md-minhaz-ahmad-a191ba303" target="_blank">LinkedIn</a>
+          <a href="mailto:minhazahmad8402612@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- profile photo -->
+        <div class="photo-frame">
+          <img src="./OG2.jpg" alt="Md. Minhaz Ahmad" />
+        </div>
+      </div>                    
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Bachelor in Computer Science and Engineering (B.E.) with hands-on skills in Core Java,
+        SQL and Web Development. Currently focused on Full Stack development —
+        building responsive UI with HTML/CSS/JavaScript and React, and backend logic with SQL & Java.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="skill-card">
+          <h4>Backend</h4>
+          <p>Core Java, SQL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3>Personal Portfolio Website</h3>
+          <p>Responsive website built using HTML, CSS, and JavaScript to showcase skills and projects.</p>
+        </article>
+        <article class="project">
+          <h3>Weapon Game (Console)</h3>
+          <p>Core Java-based text game with object-oriented structure and multiple weapons.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
+    <div class="container">
+      <h2>Experience</h2>
+      <p>Full Stack Development Internship — Qspider</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
+      </form>
+      <p id="formMsg"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Md. Minhaz Ahmad — Web Developer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
